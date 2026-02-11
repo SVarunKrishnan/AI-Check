@@ -4,7 +4,5 @@ def askvarun():
     c = a + b
     
     print("Result:", c)
-    print("Function from file C executed")
-    print("End of askvarun")
 
 askvarun()
