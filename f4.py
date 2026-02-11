@@ -1,11 +1,10 @@
-def verify_prime(number):
-    if number <= 1:
-        return False
-        
-    for candidate in range(2, int(number ** 0.5) + 1):
-        if number % candidate == 0:
-            return False
-            
-    return True
+def asknitin():
+    x = 0
+    y = 1
+    x = x + y
+    
+    print("Result:", x)
+    print("Function from file D executed")
+    print("End of asknitin")
 
-print(verify_prime(29))
+asknitin()

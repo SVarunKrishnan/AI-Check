@@ -1,13 +1,10 @@
-def is_prime_number(value):
-    if value < 2:
-        return False
-        
-    divisor = 2
-    while divisor * divisor <= value:
-        if value % divisor == 0:
-            return False
-        divisor += 1
-        
-    return True
+def askkrishna():
+    a = 0
+    b = 1
+    c = a + b
+    
+    print("Result:", c)
+    print("Function from file B executed")
+    print("End of askkrishna")
 
-print(is_prime_number(29))
+askkrishna()

@@ -1,12 +1,10 @@
-def prime_status(n):
-    if n <= 1:
-        return False
-        
-    factors = [x for x in range(2, n) if n % x == 0]
+def askvarun():
+    a = 0
+    b = 1
+    c = a + b
     
-    if len(factors) > 0:
-        return False
-    else:
-        return True
+    print("Result:", c)
+    print("Function from file C executed")
+    print("End of askvarun")
 
-print(prime_status(29))
+askvarun()
