@@ -1,8 +1,23 @@
-def askvarun():
-    a = 0
-    b = 1
-    c = a + b
+def compute_sum(value1, value2):
+    temp_result = value1 + value2
+    return temp_result
+
+
+def ask_version_three():
+    print("Preparing inputs...")
     
-    print("Result:", c)
+    num1 = 0
+    num2 = 1
     
-askvarun()
+    print("Calling helper function...")
+    
+    final_value = compute_sum(num1, num2)
+    
+    print("Computation complete.")
+    
+    print("Result:", final_value)
+    print("Execution finished.")
+
+
+if __name__ == "__main__":
+    ask_version_three()
