@@ -4,5 +4,5 @@ def askvarun():
     c = a + b
     
     print("Result:", c)
-
+    
 askvarun()
