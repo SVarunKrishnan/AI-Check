@@ -1,25 +1,24 @@
-def ask_version_two():
-    print("Initializing data...")
+def ask_version_one():
+    print("Starting calculation...")
     
-    data = {
-        "first": 0,
-        "second": 1
-    }
+    numbers = []
+    numbers.append(0)
+    numbers.append(1)
     
-    print("Dictionary created.")
+    print("Numbers prepared:", numbers)
     
-    x = data.get("first")
-    y = data.get("second")
+    total = 0
     
-    print("Values extracted:", x, y)
+    for value in numbers:
+        total = total + value
     
-    result = x + y
+    print("Intermediate total:", total)
     
-    print("Performing addition...")
+    result = total
     
     print("Result:", result)
-    print("Done.")
+    print("Calculation finished.")
     
 
 if __name__ == "__main__":
-    ask_version_two()
+    ask_version_one()

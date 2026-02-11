@@ -1,23 +1,24 @@
-def compute_sum(value1, value2):
-    temp_result = value1 + value2
-    return temp_result
-
-
-def ask_version_three():
-    print("Preparing inputs...")
+def ask_version_one():
+    print("Starting calculation...")
     
-    num1 = 0
-    num2 = 1
+    numbers = []
+    numbers.append(0)
+    numbers.append(1)
     
-    print("Calling helper function...")
+    print("Numbers prepared:", numbers)
     
-    final_value = compute_sum(num1, num2)
+    total = 0
     
-    print("Computation complete.")
+    for value in numbers:
+        total = total + value
     
-    print("Result:", final_value)
-    print("Execution finished.")
-
+    print("Intermediate total:", total)
+    
+    result = total
+    
+    print("Result:", result)
+    print("Calculation finished.")
+    
 
 if __name__ == "__main__":
-    ask_version_three()
+    ask_version_one()

@@ -1,25 +1,24 @@
-def ask_version_five():
-    print("Beginning execution...")
+def ask_version_one():
+    print("Starting calculation...")
     
-    start = 0
-    end = 1
+    numbers = []
+    numbers.append(0)
+    numbers.append(1)
     
-    print("Generating sequence...")
+    print("Numbers prepared:", numbers)
     
-    sequence = (x for x in [start, end])
+    total = 0
     
-    result = sum(sequence)
+    for value in numbers:
+        total = total + value
     
-    print("Summation complete.")
+    print("Intermediate total:", total)
     
-    if result == 1:
-        print("Validation successful.")
-    else:
-        print("Unexpected value.")
+    result = total
     
     print("Result:", result)
-    print("Execution ended.")
-
+    print("Calculation finished.")
+    
 
 if __name__ == "__main__":
-    ask_version_five()
+    ask_version_one()

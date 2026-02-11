@@ -1,23 +1,24 @@
-def ask_version_four():
-    print("Starting process...")
+def ask_version_one():
+    print("Starting calculation...")
     
-    a = 0
-    b = 1
+    numbers = []
+    numbers.append(0)
+    numbers.append(1)
     
-    counter = 0
-    values = [a, b]
+    print("Numbers prepared:", numbers)
     
-    result = 0
+    total = 0
     
-    while counter < len(values):
-        result += values[counter]
-        counter += 1
+    for value in numbers:
+        total = total + value
     
-    print("Loop finished.")
+    print("Intermediate total:", total)
+    
+    result = total
     
     print("Result:", result)
-    print("Process complete.")
-
+    print("Calculation finished.")
+    
 
 if __name__ == "__main__":
-    ask_version_four()
+    ask_version_one()
