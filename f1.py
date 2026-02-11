@@ -1,9 +1,11 @@
-text = "Hello World from Python"
-vowels = "aeiouAEIOU"
-count = 0
+def check_prime(num):
+    if num <= 1:
+        return False
+    
+    for i in range(2, num):
+        if num % i == 0:
+            return False
+            
+    return True
 
-for char in text:
-    if char in vowels:
-        count += 1
-
-print("Total vowels:", count)
+print(check_prime(29))

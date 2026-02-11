@@ -1,11 +1,12 @@
-def calculate_vowels(data):
-    vowel_set = "aeiouAEIOU"
-    result = 0
+def prime_status(n):
+    if n <= 1:
+        return False
+        
+    factors = [x for x in range(2, n) if n % x == 0]
     
-    for item in data:
-        if item in vowel_set:
-            result += 1
-            
-    return result
+    if len(factors) > 0:
+        return False
+    else:
+        return True
 
-print("Number of vowels:", calculate_vowels("Hello World from Python"))
+print(prime_status(29))

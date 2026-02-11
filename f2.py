@@ -1,7 +1,13 @@
-sentence = "Hello World from Python"
-vowel_letters = "aeiouAEIOU"
+def is_prime_number(value):
+    if value < 2:
+        return False
+        
+    divisor = 2
+    while divisor * divisor <= value:
+        if value % divisor == 0:
+            return False
+        divisor += 1
+        
+    return True
 
-matches = [letter for letter in sentence if letter in vowel_letters]
-total = len(matches)
-
-print("Vowel count is:", total)
+print(is_prime_number(29))

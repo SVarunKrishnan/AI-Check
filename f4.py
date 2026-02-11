@@ -1,9 +1,11 @@
-phrase = "Hello World from Python"
-check = "aeiouAEIOU"
+def verify_prime(number):
+    if number <= 1:
+        return False
+        
+    for candidate in range(2, int(number ** 0.5) + 1):
+        if number % candidate == 0:
+            return False
+            
+    return True
 
-vowel_total = sum(
-    1 for element in phrase
-    if element in check
-)
-
-print("Count:", vowel_total)
+print(verify_prime(29))
