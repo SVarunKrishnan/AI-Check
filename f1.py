@@ -1,11 +1,13 @@
-def check_prime(num):
-    if num <= 1:
+def is_prime_number(value):
+    if value < 2:
         return False
-    
-    for i in range(2, num):
-        if num % i == 0:
+        
+    divisor = 2
+    while divisor * divisor <= value:
+        if value % divisor == 0:
             return False
-            
+        divisor += 1
+        
     return True
 
-print(check_prime(29))
+print(is_prime_number(29))
